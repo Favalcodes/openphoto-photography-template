@@ -1,1 +1,183 @@
+/*** UNIVERSAL SELECTOR ***/
+	*
+	{
+		margin: 0;
+		font-family: Open Sans, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+		line-height: 32px;
+		box-sizing: border-box;
+	}
+/*** END UNIVERSAL SELECTOR ***/
 
+/*** ELEMENT-WIDE STYLING ***/
+	nav
+	{
+		background: linear-gradient(270deg, #1D1D1D 47.49%, rgba(29, 29, 29, 0) 98.26%);
+	}
+
+	header
+	{
+		background-image: url('../img/hero.png');
+		background-repeat: no-repeat;
+	    background-size: cover;
+        background-position: center;
+	}
+
+	body
+	{
+		background-color: black;
+	}
+
+	footer
+	{
+		border-top: 3px solid #ff0000;
+	}
+
+	a
+	{
+		color: white;
+	}
+
+	a:hover
+	{
+		color: #ff0000;
+	}
+
+	h1, span.red
+	{
+		font-size: 2rem;
+	    line-height: 60px;
+	}
+
+	h2, h3, h4
+	{
+		font-weight: 500;
+	}
+
+	.img
+	{
+		width: 100%;
+	}
+
+	.title-seperator
+	{
+		width: 10%;
+		height: 3px;
+		background-color: #ff0000;
+	}
+
+	button:focus
+	{
+		outline: 1px solid white;
+	}
+/*** END ELEMENT-WIDE STYLING ***/
+
+/*** COLOURS ***/
+	.red
+	{
+		color: #ff0000;
+	}
+
+	.btn-red
+	{
+		background-color: #ff0000;
+	}
+
+	.bg-white
+	{
+		background-color: white;
+	}
+/*** COLOURS ***/
+
+/*** FEATURED WORKS SECTION ***/
+	.grey-box
+	{
+		background: rgba(255, 255, 255, 0.85);
+		border-radius: 20px;
+	}
+
+	/*** DESIGN ARRANGEMENT FOR LARGER SCREENS ***/
+	@media only screen and (min-width: 1200px)
+	{
+		.box-right
+		{
+		    position: absolute;
+		    top: 10%;
+		    right: 30%;
+		    margin-left: -200px !important;
+		}
+
+		.box-left
+		{
+		    position: absolute;
+		    top: 10%;
+	        left: 40%;
+		    margin-right: -200px !important;
+		    z-index: 2;
+		}
+	}
+
+	.likes-right
+	{
+		position: absolute;
+	    top: 79%;
+	    left: 87%;
+	}
+
+	.likes-left
+	{
+		position: absolute;
+	    top: 79%;
+	    right: 85%;
+	}
+
+	/*** MOBILE REARRANGMENT ***/
+	@media only screen and (max-width: 441px)
+	{
+		.likes-right
+		{
+			position: absolute;
+		    top: 68%;
+		    left: 76%;
+		}
+
+		.likes-left
+		{
+			position: absolute;
+		    top: 70%;
+		    right: 75%;
+		}
+	}
+/*** END FEATURED WORKS SECTION ***/
+
+/*** STUDIO AND SESSIONS SECTION ***/
+	.sessions-TOP
+	{
+		border-radius: 10px 10px 0 0;
+	}
+
+	.sessions-bottom
+	{
+		border-radius: 0 0 10px 10px;
+	}
+/*** END STUDIO AND SESSIONS  SECTION ***/
+
+/*** PHOTOGRAPHERS SECTION ***/
+	.photograher-box
+	{
+		border-radius: 10px;
+	}
+
+	.photograher-image
+	{
+		border-radius: 10px 10px 0 0;
+	}
+
+	.name
+	{
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+/*** END PHOTOGRAPHERS SECTION ***/
